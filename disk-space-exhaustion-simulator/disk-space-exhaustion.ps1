@@ -1,6 +1,8 @@
 # ============================================================
 # Red Team Simulation Script – Disk Space Exhaustion Test
 # Author: Jigesh Sheoran
+# Context: This script is intended for academic research and
+#          red team simulation labs ONLY.
 
 
 $A = Get-Volume |where{$_.FileSystem -like "NTFS" }| select  -ExpandProperty  DriveLetter -Last 1 #Choose The Volume
