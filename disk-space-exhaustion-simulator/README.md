@@ -1,40 +1,38 @@
-# Disk Space Exhaustion Simulator
+# 💾 Disk Space Exhaustion Simulator
 
-This is a **red team simulation script** written in PowerShell to demonstrate the impact of **disk space exhaustion (resource exhaustion attack)** on NTFS volumes.  
-It is intended **only for academic research and controlled lab environments** as part of red team / blue team studies.
+A **Red Team simulation script** (PowerShell) that demonstrates the impact of **disk space exhaustion** — a form of resource exhaustion attack — on NTFS volumes.  
+
+> ⚡ **Use Case:** Designed for **academic research** and **controlled red/blue team labs** only.  
 
 ---
 
 ## ⚠️ Disclaimer
-- This script can cause a system to run out of disk space.  
-- **Do NOT run on production systems.**  
-- Use **only in virtual machines** or disposable lab environments.  
-- Author / maintainer is **not responsible** for any misuse.  
-- Purpose is strictly **educational and defensive research.**
+> 🚨 **Warning:** Running this script will deliberately consume disk space until exhaustion.  
+
+- **DO NOT** execute on your personal or production machine.  
+- Use **only inside disposable lab environments or VMs**.  
+- The author/maintainer assumes **no liability** for misuse.  
+- Purpose is **strictly educational and defensive research**.  
 
 ---
 
-## 🎯 Purpose
-- Demonstrates how attackers might attempt to exhaust storage resources.  
-- Helps defenders observe:
-  - File creation anomalies
-  - Sudden disk usage spikes
-  - Event log entries (Sysmon, Security, etc.)
-  - Permission tampering and file hiding behavior
-- Provides a basis for testing **detection and monitoring tools**.
+## 🎯 Objectives
+This simulator helps in understanding **how resource exhaustion impacts systems** and how defenders can detect/respond.  
+
+✔️ Demonstrates:
+- Attacker behavior: uncontrolled file creation and storage flooding.  
+- Defender observables:
+  - 📂 Unusual file creation activity
+  - 📉 Sudden drop in available disk space
+  - 📝 Windows Event Logs / Sysmon alerts
+  - 🔒 Permission tampering & hidden files  
 
 ---
 
-## 🔧 Requirements
-- Windows environment (tested on Windows 10/11 with PowerShell).  
-- NTFS-formatted volumes.  
-- Administrator privileges (required for some permission changes).  
-- Lab setup (VMware, VirtualBox, Hyper-V, etc.).
+## 🔧 RequirementS:
 
----
+- 🖥 **Windows environment** (tested on Windows 10/11 with PowerShell)  
+- 💽 NTFS-formatted volume(s)  
+- 🔑 Administrator privileges (for permission modification steps)  
 
-## ▶️ Usage
-1. Clone or download this repository.  
-2. Navigate to the script folder:
-   ```powershell
-   cd red-teaming-toolkit/disk-space-exhaustion-simulator
+  - Take a **snapshot before execution** for easy rollback  
