@@ -29,7 +29,7 @@ This simulator helps in understanding **how resource exhaustion impacts systems*
 
 ---
 
-## 🔧 RequirementS:
+## 🔧 Requirements:
 
 - 🖥 **Windows environment** (tested on Windows 10/11 with PowerShell)  
 - 💽 NTFS-formatted volume(s)  
