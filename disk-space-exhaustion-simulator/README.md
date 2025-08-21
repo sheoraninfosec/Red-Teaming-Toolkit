@@ -28,11 +28,4 @@ This simulator helps in understanding **how resource exhaustion impacts systems*
   - 🔒 Permission tampering & hidden files  
 
 ---
-
-## 🔧 Requirements:
-
-  - 🖥 **Windows environment** (tested on Windows 10/11 with PowerShell)  
-  - 💽 NTFS-formatted volume(s)  
-  - 🔑 Administrator privileges (for permission modification steps)  
-
   - Take a **snapshot before execution** for easy rollback  
