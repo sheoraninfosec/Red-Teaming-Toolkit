@@ -3,6 +3,8 @@
 # Author: Jigesh Sheoran
 # Context: This script is intended for academic research and
 #          red team simulation labs ONLY.
+# WARNING: Running this outside an isolated VM or test
+#          environment may cause system instability.
 
 
 $A = Get-Volume |where{$_.FileSystem -like "NTFS" }| select  -ExpandProperty  DriveLetter -Last 1 #Choose The Volume
