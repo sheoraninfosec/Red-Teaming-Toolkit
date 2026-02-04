@@ -12,10 +12,7 @@ def topological_sort(vertices, edges):
     indegree = {v: 0 for v in vertices}
 
 
-    for u, v in edges:
-        graph[u].append(v)
-        indegree[v] += 1
-
+    
     # Step 2: Queue all vertices with in-degree 0
     queue = deque([v for v in vertices if indegree[v] == 0])
     topo_order = []
