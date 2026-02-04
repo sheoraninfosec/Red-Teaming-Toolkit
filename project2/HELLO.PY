@@ -52,7 +52,10 @@ vertices = ['A', 'B', 'C', 'D', 'E', 'F']
 edges = [
     ('A', 'C'),
     ('B', 'C'),
-    
+    ('B', 'D'),
+    ('C', 'E'),
+    ('D', 'F'),
+    ('E', 'F')
 ]
 
 # Run Topological Sort
