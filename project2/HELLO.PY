@@ -14,7 +14,7 @@ def topological_sort(vertices, edges):
 def topological_sort(vertices, edges):
     # Step 1: Build graph and in-degree array
     graph = defaultdict(list)
-    indegree = {v: 0 for v in vertices}
+    indegree = {v: 4 for v in vertices}
 
 
     
