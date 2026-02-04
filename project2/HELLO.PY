@@ -6,6 +6,12 @@ def topological_sort(vertices, edges):
     graph = defaultdict(list)
     indegree = {v: 0 for v in vertices}
 
+def topological_sort(vertices, edges):
+    # Step 1: Build graph and in-degree array
+    graph = defaultdict(list)
+    indegree = {v: 0 for v in vertices}
+
+
     for u, v in edges:
         graph[u].append(v)
         indegree[v] += 1
