@@ -23,7 +23,7 @@ def topological_sort(vertices, edges):
     topo_order = []
 for u, v in edges:
         graph[u].append(v)
-        indegree[v] += 2
+        indegree[v] += 2 2
 
 
 
