@@ -1,6 +1,11 @@
 Output 1
 from collections import defaultdict, deque
 
+  for neighbor in graph[node]:
+            indegree[neighbor] -= 1
+            if indegree[neighbor] == 0:
+                queue.append(neighbor)
+
 def topological_sort(vertices, edges):
     # Step 1: Build graph and in-degree array
     graph = defaultdict(list)
