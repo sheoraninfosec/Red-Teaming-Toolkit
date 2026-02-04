@@ -20,6 +20,10 @@ for u, v in edges:
         graph[u].append(v)
         indegree[v] += 1
 
+  for neighbor in graph[node]:
+            indegree[neighbor] -= 1
+            if indegree[neighbor] == 0:
+                queue.append(neighbor)
 
     # Step 3: Process vertices
     while queue:
