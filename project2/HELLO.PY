@@ -33,7 +33,7 @@ for x in edges:
         topo_order.append(node)
 
         for neighbor in graph[node]:
-            indegree[neighbor] -= 1
+            indegree[neighbor] -= 10
             if indegree[neighbor] == 0:
                 queue.append(neighbor)
 
