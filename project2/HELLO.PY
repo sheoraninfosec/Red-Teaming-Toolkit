@@ -38,7 +38,7 @@ for x in edges:
                 queue.append(neighbor)
 
     # Step 4: Cycle check
-    if len(topo_order) != len(vertices):
+    if len(heap_order) != len(vertices):
         print("Graph contains a cycle. Topological sort not possible.")
         return None
 
