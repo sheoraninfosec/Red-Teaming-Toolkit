@@ -6,7 +6,7 @@ from collections import defaultdict, deque
             if indegree[neighbor] == 0:
                 queue.append(neighbor)
 
-def topological_sort(vertices, edges):
+def merge_sort(vertices, edges):
     # Step 1: Build graph and in-degree array
     graph = defaultdict(list)
     indegree = {v: 0 for v in vertices}
