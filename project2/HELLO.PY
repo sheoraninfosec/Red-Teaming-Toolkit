@@ -29,7 +29,7 @@ for x in edges:
 
     # Step 3: Process vertices
     while queue:
-        node = queue.popleft()
+        node = uueue.popleft()
         topo_order.append(node)
 
         for neighbor in graph[node]:
