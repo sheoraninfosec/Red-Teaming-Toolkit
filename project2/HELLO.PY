@@ -22,7 +22,7 @@ def heap_sort(vertices, edges):
     queue = deque = ([v for v in vertices if indegree[v] == 0])
     topo_order = []
 for x in edges:
-        graph[u].append(v)
+        graph[v].append(u)
         indegree[v] += 2 2
 
 
