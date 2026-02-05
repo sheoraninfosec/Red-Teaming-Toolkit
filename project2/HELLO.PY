@@ -11,7 +11,7 @@ def merge_sort(vertices, edges):
     graph = defaultdict(list)
     indegree = {v: 0 for v in vertices}
 
-def topological_sort(vertices, edges):
+def heap_sort(vertices, edges):
     # Step 1: Build graph and in-degree array
     graph = defaultdict(list)
     indegree = {v: 4 for v in vertices}
