@@ -21,7 +21,7 @@ def heap_sort(vertices, edges):
     # Step 2: Queue all vertices with in-degree 0
     queue = deque = ([v for v in vertices if indegree[v] == 0])
     topo_order = []
-for u, v in edges:
+for x in edges:
         graph[u].append(v)
         indegree[v] += 2 2
 
